@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/question.css">
+  <script type="text/javascript">var submitted = false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) 
+{window.location='thanks.html'}"></iframe>
+  <title>お問い合わせフォーム</title>
+</head>
+
+<body>
+  <header>
+    <div class="headerInner">
+      <h1 class="logo">お問い合わせフォーム</h1>
+    </div>
+  </header>
+  <main>
+    <h1>お問い合わせ</h1>
+    <form
+      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfRLrlIa3ntzM6oPhmNeV2Rrfs5dIC0VInI2HZKPr7NstrFkQ/formResponse"
+      method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true">
+      <table class="contactForm">
+        <tr>
+          <td><label for="name">お名前</label></td>
+          <td><input type="text" id="name" name="entry.1349909469" placeholder="名前を入れてください"></td>
+        </tr>
+        <tr>
+          <td>性別(任意)</td>
+          <td><input type="radio" name="entry.477590843" id="man" value="男性"><label for="man">男性</label>
+            <input type="radio" name="entry.477590843" id="woman" value="女性"><label for="woman">女性</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="age">ご年齢</label></td>
+          <td>
+            <div class="selectBox">
+              <select name="entry.878060087" id="age">
+                <option value="10歳未満">10歳未満</option>
+                <option value="10代">10代</option>
+                <option value="20代">20代</option>
+                <option value="30代">30代</option>
+                <option value="40代">40代</option>
+                <option value="50代以上">50代以上</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="title">タイトル</label></th>
+          <td><input type="text" id="title" name="entry.62016315" placeholder="タイトルを入力してください。"></type>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="comment">質問内容</lab=el>
+          </th>
+          <td><textarea name="entry.2128603866" id="comment" cols="30" rows="10"></textarea></td>
+        </tr>
+      </table>
+      <div class="text-center">
+        <input type="checkbox" id="check" name="entry.546209638" value="個人情報の取り扱いに同意する"><label
+          for="check">個人情報の取り扱いに同意する</label>
+      </div>
+      <div class="text-center">
+        <input type="submit" value="送信する" name="submitBtn">
+      </div>
+    </form>
+    <a href="nirayama.html">トップページに戻る</a>
+  </main>
+
+  <footer>
+    <div class="footerInner"><small>&copy; 仮想高等学校</small></div>
+  </footer>
+</body>
+
+</html>
