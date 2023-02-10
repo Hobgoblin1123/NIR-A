@@ -28,12 +28,13 @@
         display: flex;
         position: relative;
         z-index: -1;
-        width: 700px;
+        width: 710px;
         height: 550px;
         overflow: hidden;
     }
 
     .carousel-area{
+        transform: translateX(-40px);
         display: flex;
         width: 10000px;
     }
@@ -47,6 +48,8 @@
     .carousel-area li img{
         width: 700px;
         aspect-ratio: 16/9;
+        border: gray solid 5px;
+        border-radius: 20px;
     }
 }
 
