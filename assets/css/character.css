@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    height: 920px;
+    background-color: red;
+}
+
+.chara{
+    display: flex;
+}
+#heroName{
+    width: 70%;
+    height: 15px;
+    margin-top: 0;
+    font-size: 15px;
+    border-bottom: gray solid 2px;
+}
+
+#charaImage{
+    height: 500px;
+    width: auto;
+}
+
+.introduction{
+    width: 20%;
+    height: 100%;
+}
+
+.charaModel{
+    height: 600px;
+    width: 300px;
+}
+
+.scroll-trigger{
+    margin-top: 0;
+    height: 920px;
+    background-color: orange;
+}
+
+#heroinName{
+    width: 70%;
+    height: 15px;
+    font-size: 15px;
+    border-bottom: gray solid 2px;
+}
