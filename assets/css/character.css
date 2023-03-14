@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 
-.hero{
+#hero{
     height: 920px;
     background-color: red;
 }
@@ -40,7 +40,7 @@ body{
     background-color: orange;
 }
 
-#heroinName{
+#heroineName{
     width: 70%;
     height: 15px;
     font-size: 15px;

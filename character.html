@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="assets/css/character.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
-    <script src="assets/js/character.js"></script>
+    <script src="assets/js/character.js" defer></script>
     <title>キャラクター紹介</title>
 </head>
 
 <body>
-<main class = "main">
-    <div class="hero">
+    <div id="hero">
             <h2 id="heroName">主人公</h2>
             <div class="chara">
                 <img src="assets/images/hero.png" alt="主人公" id="charaImage">
@@ -24,15 +23,22 @@
             </div>
     </div>
 
-    <div class="scroll-trigger">
-            <h2 id="heroinName">ヒロイン</h2>
+    <div id="heroine">
+            <h2 id="heroineName">ヒロイン</h2>
             <div class="chara">
                 <img src="assets/images/heroin.png" alt="ヒロイン" id="charaImage">
                 <p class="introduction">本作のヒロイン</p>
                 <video src="assets/videos/temp.mp4" class="charaModel"></video>
             </div>
     </div>
-</main>
+    <div id="boss">
+        <h2 id="heroineName">ヒロイン</h2>
+        <div class="chara">
+            <img src="assets/images/heroin.png" alt="ヒロイン" id="charaImage">
+            <p class="introduction">本作のヒロイン</p>
+            <video src="assets/videos/temp.mp4" class="charaModel"></video>
+        </div>
+</div>
 </body>
 
 </html>
