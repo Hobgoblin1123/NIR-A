@@ -1,0 +1,48 @@
+#meteor1{
+    width: 100px;
+    height: auto;
+    position: fixed;
+    z-index: -1;
+    animation: ryusei1 10s infinite;
+    animation-delay: 0s;
+}
+
+#meteor2{
+    width: 30px;
+    height: auto;
+    position: fixed;
+    z-index: -1;
+    animation: ryusei1 9s infinite;
+    animation-delay: 5s;
+}
+
+#meteor3{
+    width: 30px;
+    height: auto;
+    position: fixed;
+    z-index: -1;
+    animation: ryusei2 8s infinite;
+    animation-delay: 4s;
+}
+
+@keyframes ryusei1{
+    0%{
+        left: -250%;
+        top: -250%;
+    }
+    100%{
+        left: 260%;
+        top: 220%;
+    }
+}
+
+@keyframes ryusei2{
+    0%{
+        left: -250%;
+        top: -200%;
+    }
+    100%{
+        left: 260%;
+        top: 260%;
+    }
+}

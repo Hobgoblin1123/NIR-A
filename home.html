@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/appear.css">
+    <link rel="stylesheet" href="assets/css/deco.css">
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/shutter.js"></script>
     <script src="assets/js/shutter2.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/header.js"></script>
     <script src="assets/js/tab-controll.js"></script>
+    <script src="assets/js/appear.js"></script>
 
     <title>ホームページ</title>
 </head>
@@ -52,12 +55,12 @@
     </div> -->
         <div class="slider">
           <div class="blur">
-            <img id="infoTitle" src="assets/images/info-1.png" alt="インフォメーション">
+            <img id="infoTitle" class="fade-in fade-in-left" src="assets/images/info-1.png" alt="インフォメーション">
             <div class="sliderBtn">
                 <a id="prevBtn"><img src="assets/images/next1.png"></a>
                 <a id="nextBtn"><img src="assets/images/next1.png"></a>
             </div>
-            <div class="carousel-wrapper">
+            <div class="carousel-wrapper fade-in fade-in-up">
                 <ul class="carousel-area">
                     <li><img src="assets/images/testImage.jpg"></li>
                     <li><img src="assets/images/screenshot.jpg"></li>
@@ -71,7 +74,7 @@
         <!-- ツイッター -->
         <div id="twitter">
           <div class="blur">
-            <img id = "twitterTitle" src="assets/images/twitter-1.png" alt="ツイッター">
+            <img id = "twitterTitle" class="fade-in fade-in-left" src="assets/images/twitter-1.png" alt="ツイッター">
             <a class="twitter-timeline" data-width="50%" data-height="400px" data-chrome="transparent"
                 data-chrome="noborders" frameborder="0"
                 href="https://twitter.com/NiraPhy_150?ref_src=twsrc%5Etfw">Tweets by NiraPhy_150</a>
@@ -86,6 +89,11 @@
           </div>
         </div>
     </main>
+
+    <!-- 装飾 -->
+    <img id="meteor1" src="assets/images/meteor-2.png" alt="">
+    <img id="meteor2" src="assets/images/meteor-2.png" alt="">
+    <img id="meteor3" src="assets/images/meteor-2.png" alt="">
     <footer>
         <div class="footerInner">
           <ul id=map>
