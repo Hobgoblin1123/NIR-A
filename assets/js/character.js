@@ -1,6 +1,6 @@
 var slide1 = document.getElementById('hero');
 var slide2 = document.getElementById('heroine');
-var slide3 = document.getElementById('boss')
+var slide3 = document.getElementById('boss');
 
 var heroTop = slide1.offsetTop;
 var heroineTop = slide2.offsetTop;
@@ -32,6 +32,8 @@ function scrollToElement(elementTop) {
   
   isAnimating = true;
   
+  $("body").css('overflow','hidden');
+
   $("html, body").animate({
     scrollTop: elementTop
   }, 500, function() {
@@ -44,7 +46,8 @@ function scrollToElement(elementTop) {
   // スクロールが完了した後に、再度スクロールイベントのハンドラを登録する
   setTimeout(function() {
     $(window).on('scroll', onScroll);
-  }, 500);
+    $("body").css('overflow','scroll');
+  }, 750);
 }
 
 function onScroll() {

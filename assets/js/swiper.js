@@ -36,6 +36,17 @@ n = 0;
                         n = 0;
                     },1000);
                 }
+                else if(number == sliderLength && n == 0){
+                    number = number - sliderLength + 1;
+                    n = 1
+                    jQuery('.carousel-area').animate({
+                        marginLeft: parseInt(jQuery(".carousel-area").css("margin-left"))+5600+"px"
+                    });
+                    console.log(number);
+                    setTimeout(function(){
+                        n = 0;
+                    },1000);
+                }
             });
         });
     }

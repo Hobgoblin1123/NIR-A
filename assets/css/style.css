@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-image: url('css-images/pc-background.jpg');
   background-size:contain;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
 ul,
@@ -380,4 +381,33 @@ header .button:hover {
   margin-right: auto;
   width: 40%;
   margin-bottom: 50px;
+}
+
+#story{
+  margin-top: 20%;
+}
+
+#context{
+  width: 70%;
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#context  h2{
+  text-align: center;
+  letter-spacing: 8px;
+  font-size: 35px;
+  color: rgb(204, 227, 248);
+  text-shadow: 3px 3px black;
+}
+
+#context p{
+  margin-top: 100px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 25px;
+  color: rgb(208, 206, 206);
+  text-shadow: 2px 2px black;
 }
