@@ -20,6 +20,11 @@
     <script src="assets/js/tab-controll.js"></script>
     <script src="assets/js/appear.js"></script>
     <script src="assets/js/context.js" defer></script>
+    <style>
+      canvas {
+          border: 1px solid black;
+      }
+    </style>
 
     <title>ホームページ</title>
 </head>
@@ -54,7 +59,8 @@
 
     <main>
         <!-- <div class="catch-copy">
-        <h1 id = "main-message">あなたに<span>未来</span>は託された</h1>
+        <h1 id = "main-message">あなたに<span>未来</sp
+          an>は託された</h1>
     </div> -->
         <div class="slider">
           <div class="blur">
@@ -102,6 +108,33 @@
             </div>
           </div>
         </div>
+
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r128/build/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r128/examples/js/loaders/FBXLoader.js"></script>
+
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var renderer = new THREE.WebGLRenderer({canvas: canvas});
+
+        var camera = new THREE.PerspectiveCamera(45, canvas.width / canvas.height, 1, 1000);
+        camera.position.set(0, 0, 5);
+
+        var scene = new THREE.Scene();
+
+        var loader = new THREE.FBXLoader();
+        loader.load('assets/test.fbx', function (object) {
+            scene.add(object);
+        });
+
+        function render() {
+            renderer.render(scene, camera);
+            requestAnimationFrame(render);
+        }
+
+        render();
+    </script>
     </main>
 
     <!-- 装飾 -->

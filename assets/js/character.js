@@ -22,8 +22,9 @@ function shouldScroll2to3(){
 }
 
 function shouldScroll3to2(){
-  return nowSlide == 3 && $(window).scrollTop() < bossTop;
+  return nowSlide == 3 && $(window).scrollTop() < bossTop && $(window).scrollTop() > heroineTop;
 }
+
 
 function scrollToElement(elementTop) {
   if (isAnimating) {
@@ -46,8 +47,8 @@ function scrollToElement(elementTop) {
   // スクロールが完了した後に、再度スクロールイベントのハンドラを登録する
   setTimeout(function() {
     $(window).on('scroll', onScroll);
-    $("body").css('overflow','scroll');
   }, 750);
+  $("body").css('overflow','scroll'); //スクロールイベントが行われてからはみ出しの表示をスクロールにするように戻す
 }
 
 function onScroll() {
@@ -60,19 +61,15 @@ function onScroll() {
   } else if (shouldScroll2to3()) {
     nowSlide = 3;
     scrollToElement(bossTop);
-  } else if (shouldScroll3to2()) {
+  } 
+  else if (shouldScroll3to2()) {
     nowSlide = 2;
     scrollToElement(heroineTop);
+    console.log('a');
   }
 
   console.log(nowSlide);
 }
 
 $(window).on('scroll', onScroll);
-
-
-
-
-
-
 

@@ -11,10 +11,15 @@ body{
   }
 
 #hero{
-    height: 920px;
+    /* height: 920px;
     background-image: url('css-images/shrine2.jpg');
     background-size: cover ;
-    opacity: 0.8;
+    opacity: 0.8; */
+    margin-top: 0;
+    background-image: url('../images/heroIntro.jpg');
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 16/9;
 }
 
 .chara{
@@ -50,10 +55,15 @@ body{
 }
 
 #heroine{
-    height: 920px;
+    /* height: 920px;
     background-image: url('css-images/castlepond.jpg');
     background-size: cover ;
-    opacity: 0.8;
+    opacity: 0.8; */
+    background-image: url('../images/heroineIntro.jpg');
+    margin-top: 0;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 16/9;
 }
 
 #heroineName{
@@ -64,8 +74,13 @@ body{
 }
 
 #boss{
-    height: 920px;
+    /* height: 920px;
     background-image: url('css-images/sightseeing.jpg');
     background-size: cover ;
-    opacity: 0.8;
+    opacity: 0.8; */
+    background-image: url('../images/bossIntro.jpg');
+    margin-top: 0;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 16/9;
 }
