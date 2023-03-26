@@ -22,6 +22,12 @@ body{
     aspect-ratio: 16/9;
 }
 
+#heroModel{
+    height: 100%;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+}
+
 .chara{
     display: flex;
 }
