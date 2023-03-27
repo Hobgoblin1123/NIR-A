@@ -16,48 +16,48 @@ var nowSlide = 1;
 var isAnimating = false;
 
 function shouldScroll1to2() {
-  return nowSlide == 1 && $(window).scrollTop() > slide1Top;
+  return nowSlide == 1 && $(window).scrollTop() > slide1Top && !isAnimating;
 }
 
 function shouldScroll2to1() {
-  return nowSlide == 2 && $(window).scrollTop() < slide2Top;
+  return nowSlide == 2 && $(window).scrollTop() < slide2Top && !isAnimating;
 }
 
 function shouldScroll2to3(){
-  return nowSlide == 2 && $(window).scrollTop() > slide2Top;
+  return nowSlide == 2 && $(window).scrollTop() > slide2Top && !isAnimating;
 }
 
 function shouldScroll3to2(){
-  return nowSlide == 3 && $(window).scrollTop() < slide3Top;
+  return nowSlide == 3 && $(window).scrollTop() < slide3Top && !isAnimating;
 }
 
 function shouldScroll3to4(){
-  return nowSlide == 3 && $(window).scrollTop() > slide3Top;
+  return nowSlide == 3 && $(window).scrollTop() > slide3Top && !isAnimating;
 }
 
 function shouldScroll4to3(){
-  return nowSlide == 4 && $(window).scrollTop() < slide4Top;
+  return nowSlide == 4 && $(window).scrollTop() < slide4Top && !isAnimating;
 }
 
 function shouldScroll4to5(){
-  return nowSlide == 4 && $(window).scrollTop() > slide4Top;
+  return nowSlide == 4 && $(window).scrollTop() > slide4Top && !isAnimating;
 }
 
 function shouldScroll5to4(){
-  return nowSlide == 5 && $(window).scrollTop() < slide5Top;
+  return nowSlide == 5 && $(window).scrollTop() < slide5Top && !isAnimating;
 }
 
 function shouldScroll5to6(){
-  return nowSlide == 5 && $(window).scrollTop() > slide5Top;
+  return nowSlide == 5 && $(window).scrollTop() > slide5Top && !isAnimating;
 }
 
 function shouldScroll6to5(){
-  return nowSlide == 6 && $(window).scrollTop() < slide6Top;
+  return nowSlide == 6 && $(window).scrollTop() < slide6Top && !isAnimating;
 }
 
 function scrollToElement(elementTop) {
   if (isAnimating) {
-    return; // アニメーション中は何もしない(isAnimatingがtrueであると、return;が実行される。return;で終わるとその先の処理は実行されない)
+    return; // アニメーション中は何もしない
   }
   
   isAnimating = true;
@@ -68,16 +68,12 @@ function scrollToElement(elementTop) {
     scrollTop: elementTop
   }, 1000, function() {
     isAnimating = false;
+    $("body").css('overflow','scroll');
+    $(window).on('scroll', onScroll);
   });
   
   // スクロールイベントのハンドラを一時的に解除する
   $(window).off('scroll');
-  
-  // スクロールが完了した後に、再度スクロールイベントのハンドラを登録する
-  setTimeout(function() {
-    $(window).on('scroll', onScroll);
-}, 1250);
-  $("body").css('overflow','scroll'); //スクロールイベントが行われてからはみ出しの表示をスクロールにするように戻す
 }
 
 function onScroll() {
