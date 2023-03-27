@@ -9,6 +9,14 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+#backHome{
+ font-size: 20px;
+ color: white;
+ position: fixed;
+ z-index: 100;
+ margin-left: 10px;
+}
+
 .firstItem{
     padding-top: 5%;
 }
