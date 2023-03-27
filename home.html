@@ -17,14 +17,8 @@
     <script src="assets/js/shutter2.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/header.js"></script>
-    <script src="assets/js/tab-controll.js"></script>
     <script src="assets/js/appear.js"></script>
     <script src="assets/js/context.js" defer></script>
-    <style>
-      canvas {
-          border: 1px solid black;
-      }
-    </style>
 
     <title>ホームページ</title>
 </head>
@@ -108,34 +102,6 @@
             </div>
           </div>
         </div>
-
-    <canvas id="myCanvas" width="400" height="400"></canvas>
-
-    <script src="https://cdn.rawgit.com/mrdoob/three.js/r128/build/three.min.js"></script>
-    <script src="https://cdn.rawgit.com/mrdoob/three.js/r128/examples/js/loaders/FBXLoader.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fflate@0.7.0"></script>
-
-    <script>
-        var canvas = document.getElementById('myCanvas');
-        var renderer = new THREE.WebGLRenderer({canvas: canvas});
-
-        var camera = new THREE.PerspectiveCamera(45, canvas.width / canvas.height, 1, 1000);
-        camera.position.set(0, 0, 5);
-
-        var scene = new THREE.Scene();
-
-        var loader = new THREE.FBXLoader();
-        loader.load('assets/test.fbx', function (object) {
-            scene.add(object);
-        });
-
-        function render() {
-            renderer.render(scene, camera);
-            requestAnimationFrame(render);
-        }
-
-        render();
-    </script>
     </main>
 
     <!-- 装飾 -->
