@@ -1,0 +1,16 @@
+diff a/home.html b/home.html	(rejected hunks)
+@@ -17,14 +17,8 @@
+     <script src="assets/js/shutter2.js"></script>
+     <script src="assets/js/swiper.js"></script>
+     <script src="assets/js/header.js"></script>
+-    <script src="assets/js/tab-controll.js"></script>
+     <script src="assets/js/appear.js"></script>
+     <script src="assets/js/context.js" defer></script>
+-    <style>
+-      canvas {
+-          border: 1px solid black;
+-      }
+-    </style>
+ 
+     <title>ホームページ</title>
+ </head>
