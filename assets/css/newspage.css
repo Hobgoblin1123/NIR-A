@@ -12,6 +12,14 @@ body{
     height: auto;
 }
 
+#backHome{
+    font-size: 20px;
+    color: white;
+    position: fixed;
+    z-index: 100;
+    margin-left: 10px;
+   }
+
 h2{
     text-align: center;
     font-size: 50px;
@@ -46,6 +54,10 @@ span{
     margin-top: 100px;
     align-items: center;
     
+}
+
+.newsList a img:hover{
+    transform: scale(120%);
 }
 
 .newsList > a img{

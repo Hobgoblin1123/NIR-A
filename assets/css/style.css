@@ -26,7 +26,7 @@ li {
   background-image: url('css-images/header-1.png');
   opacity: 0.8;
   display: flex;
-  align-items: center;
+  justify-content: center;
   position: fixed;
   z-index: 1000;
   box-shadow: 0 1px 0 0 grey;
@@ -38,12 +38,23 @@ li {
   margin-right: 30%;
 }
 
-.fHeader a {
+.list  {
   color: white;
+  border-bottom: none;
+  text-decoration: none;
+  flex: 1;
+  margin-right: 100px;
+  font-size: 20px;
+}
+
+.list:hover{
+  color: gray;
 }
 
 .pc-menu {
-  flex: 1;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pc-menu ul {
@@ -388,11 +399,12 @@ header .button:hover {
 }
 
 #context{
-  width: 70%;
+  width: 80%;
   display: block;
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
+  background-color: rgb(255, 255, 255, 0.2);
 }
 
 #context  h2{
