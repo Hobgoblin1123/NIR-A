@@ -1,0 +1,186 @@
+@media only screen and (max-width:767px) {
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    }
+    
+    body::-webkit-scrollbar{
+        display: none;
+    }
+    
+    #backHome{
+     font-size: 20px;
+     color: white;
+     position: fixed;
+     z-index: 100;
+     margin-left: 10px;
+    }
+    
+    .firstItem{
+        padding-top: 5%;
+    }
+    
+    .blur{
+        width: 100%;
+        height: 100vh;
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+    }
+
+    .wipePos{
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        position: absolute;
+    }
+    
+    .wipe{
+        position: relative;
+        width: 60%;
+        height: auto;
+        margin-top: 270px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+    
+    .wipe:hover{
+        transform: scale(110%);
+    }
+    
+    #hero{
+        margin-top: 0;
+        background-image: url('../images/sp-heroIntro.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #heroIntro{
+        margin-top: 0;
+        background-image: url('css-images/mainbackground.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #heroIntro li{
+        color: rgb(183, 64, 64);
+        text-shadow: 1px 1px rgba(47, 46, 46, 0.8);
+        font-size: 25px;
+        margin-bottom: 0;
+        background-color: rgb(0, 0, 0,0.5);
+    }
+    
+    #heroName{
+        width: 50%;
+        height: auto;
+    }
+    
+    #bg1{
+        background-color: rgb(79, 32, 32);
+        transform: translateY(280px);
+    }
+    
+    .loop{
+        height: 15px;
+        display: flex;
+        overflow: hidden;
+        transform: translateY(280px);
+    }
+    
+    .loop1{
+        font-size: 15px;
+        color: rgb(173, 173, 173);
+        margin-left: 5px;
+        animation: loop1 10s linear infinite;
+    }
+    
+    .loop2{
+        font-size: 15px;
+        color: rgb(173, 173, 173);
+        margin-left: 5px;
+        animation: loop2 10s linear infinite;
+    }
+    
+    @keyframes loop1{
+        100%{
+            transform: translateX(-500px);
+        }
+    }
+    
+    @keyframes loop2{
+        100%{
+            transform: translateX(-500px);
+        }
+    }
+    
+    #heroine{
+        background-image: url('../images/sp-heroineIntro.jpg');
+        margin-top: 0;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #heroineIntro{
+        background-image: url('css-images/castlepond.jpg');
+        margin-top: 0;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #heroineIntro li{
+        color: rgb(88, 156, 188);
+        text-shadow: 0.5px 0.5px rgb(191, 189, 189);
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    
+    #heroineName{
+        width: 50%;
+        height: auto;
+    }
+    
+    #bg2{
+        background-color: rgb(139, 186, 186);
+        margin-top: 280px;
+    }
+    
+    #boss{
+        background-image: url('../images/sp-bossIntro.jpg');
+        margin-top: 0;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #bossIntro{
+        background-image: url('css-images/bridge.jpg');
+        margin-top: 0;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #bossIntro li{
+        color: darkblue;
+        text-shadow: 0.5px 0.5px rgb(191, 189, 189);
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    
+    #bossName{
+        width: 50%;
+        height: auto;
+    }
+    
+    #bg3{
+        background-color: rgb(86, 84, 113);
+        margin-top: 280px;
+    }
+    
+}

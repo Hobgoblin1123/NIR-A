@@ -1,184 +1,191 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-
-body::-webkit-scrollbar{
-    display: none;
-}
-
-#backHome{
- font-size: 20px;
- color: white;
- position: fixed;
- z-index: 100;
- margin-left: 10px;
-}
-
-.firstItem{
-    padding-top: 5%;
-}
-
-.blur{
-    width: 100%;
-    height: 100%;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-}
-
-
-.model{
-    height: 100%;
-    float: left;
-    z-index: 5;
-    position: relative;
-    overflow: hidden;
-}
-
-.wipePos{
-    width: 100%;
-    height: 100%;
-    z-index: 4;
-    position: absolute;
-}
-
-.wipe{
-    position: relative;
-    float: right;
-    width: 20%;
-    height: auto;
-}
-
-
-#hero{
-    margin-top: 0;
-    background-image: url('../images/heroIntro.jpg');
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 16/9;
-}
-
-#heroIntro{
-    margin-top: 0;
-    background-image: url('css-images/shrine.png');
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 16/9;
-}
-
-#heroIntro li{
-    margin-left: 400px;
-    color: rgb(143, 52, 52);
-    text-shadow: 0.5px 0.5px rgb(191, 189, 189);
-    font-size: 40px;
-    margin-bottom: 0;
-}
-
-#heroName{
-    width: 25%;
-    height: auto;
-}
-
-#bg1{
-    background-color: rgb(79, 32, 32);
-}
-
-.loop{
-    height: 35px;
-    display: flex;
-    overflow: hidden;
-}
-
-.loop1{
-    font-size: 30px;
-    color: rgb(173, 173, 173);
-    margin-left: 5px;
-    animation: loop1 10s linear infinite;
-}
-
-.loop2{
-    font-size: 30px;
-    color: rgb(173, 173, 173);
-    margin-left: 5px;
-    animation: loop2 10s linear infinite;
-}
-
-@keyframes loop1{
-    100%{
-        transform: translateX(-500px);
+@media only screen and (min-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
     }
-}
-
-@keyframes loop2{
-    100%{
-        transform: translateX(-500px);
+    
+    body::-webkit-scrollbar{
+        display: none;
     }
-}
-
-#heroine{
-    background-image: url('../images/heroineIntro.jpg');
-    margin-top: 0;
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 16/9;
-}
-
-#heroineIntro{
-    background-image: url('css-images/castlepond.png');
-    margin-top: 0;
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 16/9;
-}
-
-#heroineIntro li{
-    margin-left: 400px;
-    color: rgb(88, 156, 188);
-    text-shadow: 0.5px 0.5px rgb(191, 189, 189);
-    font-size: 40px;
-    margin-bottom: 0;
-}
-
-#heroineName{
-    width: 25%;
-    height: auto;
-}
-
-#bg2{
-    background-color: rgb(139, 186, 186);
-}
-
-#boss{
-    background-image: url('../images/bossIntro.jpg');
-    margin-top: 0;
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 16/9;
-}
-
-#bossIntro{
-    background-image: url('css-images/sightseeing.jpg');
-    margin-top: 0;
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 16/9;
-}
-
-#bossIntro li{
-    margin-left: 400px;
-    color: darkblue;
-    text-shadow: 0.5px 0.5px rgb(191, 189, 189);
-    font-size: 40px;
-    margin-bottom: 0;
-}
-
-#bossName{
-    width: 25%;
-    height: auto;
-}
-
-#bg3{
-    background-color: rgb(86, 84, 113);
+    
+    #backHome{
+     font-size: 20px;
+     color: white;
+     position: fixed;
+     z-index: 100;
+     margin-left: 10px;
+    }
+    
+    .firstItem{
+        padding-top: 5%;
+    }
+    
+    .blur{
+        width: 100%;
+        height: 100%;
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+    }
+    
+    
+    .model{
+        margin-top: 0;
+        padding: 0;
+        margin-left: 0;
+        height: 100vh;
+        float: left;
+        z-index: 5;
+        position: relative;
+        overflow: hidden;
+        margin-left: 0;
+        display: block;
+    }
+    
+    .wipePos{
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        position: absolute;
+    }
+    
+    .wipe{
+        position: relative;
+        float: right;
+        width: 20%;
+        height: auto;
+    }
+    
+    
+    #hero{
+        margin-top: 0;
+        background-image: url('../images/heroIntro.jpg');
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    
+    #heroIntro{
+        margin-top: 0;
+        background-image: url('css-images/mainbackground.jpg');
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    
+    #heroIntro li{
+        margin-left: 400px;
+        color: rgb(183, 64, 64);
+        text-shadow: 1px 1px rgba(47, 46, 46, 0.8);
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    
+    #heroName{
+        width: 25%;
+        height: auto;
+    }
+    
+    #bg1{
+        background-color: rgb(79, 32, 32);
+    }
+    
+    .loop{
+        height: 35px;
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .loop1{
+        font-size: 30px;
+        color: rgb(173, 173, 173);
+        margin-left: 5px;
+        animation: loop1 10s linear infinite;
+    }
+    
+    .loop2{
+        font-size: 30px;
+        color: rgb(173, 173, 173);
+        margin-left: 5px;
+        animation: loop2 10s linear infinite;
+    }
+    
+    @keyframes loop1{
+        100%{
+            transform: translateX(-500px);
+        }
+    }
+    
+    @keyframes loop2{
+        100%{
+            transform: translateX(-500px);
+        }
+    }
+    
+    #heroine{
+        background-image: url('../images/heroineIntro.jpg');
+        margin-top: 0;
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    
+    #heroineIntro{
+        background-image: url('css-images/castlepond.jpg');
+        margin-top: 0;
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    
+    #heroineIntro li{
+        margin-left: 400px;
+        color: rgb(88, 156, 188);
+        text-shadow: 0.5px 0.5px rgb(191, 189, 189);
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    
+    #heroineName{
+        width: 25%;
+        height: auto;
+    }
+    
+    #bg2{
+        background-color: rgb(139, 186, 186);
+    }
+    
+    #boss{
+        background-image: url('../images/bossIntro.jpg');
+        margin-top: 0;
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    
+    #bossIntro{
+        background-image: url('css-images/bridge.jpg');
+        margin-top: 0;
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    
+    #bossIntro li{
+        margin-left: 400px;
+        color: darkblue;
+        text-shadow: 0.5px 0.5px rgb(191, 189, 189);
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    
+    #bossName{
+        width: 25%;
+        height: auto;
+    }
+    
+    #bg3{
+        background-color: rgb(86, 84, 113);
+    }    
 }

@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  background-image: url('css-images/pc-background.jpg');
+  background-size:contain;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+ul,
+li {
+  color: white;
+  list-style: none;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  #topPic{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #top-video {
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #message{
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  #takusaretaM{
+    width: 5%;
+    height: auto;
+    margin-left: 20px;
+    transform: translateY(75%);
+  }
+
+  #miraihaM{
+    transform: translateY(30%) scale(104%);
+    width: 5%;
+    height: auto;
+  }
+
+  #anataniM{
+    width: 5%;
+    height: auto;
+  }
+
+  .fHeader {
+    padding-top: 20px;
+    height: 12%;
+    line-height: normal;
+    width: 100%;
+    background-image: url('css-images/header-1.png');
+    opacity: 0.8;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 1px 0 0 grey;
+  }
+  
+  #logo{
+    width: 15%;
+    margin-top: -2%;
+    margin-right: 10%;
+  }
+  
+  .list  {
+    width: 100%;
+    color: white;
+    border-bottom: none;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 20px;
+  }
+  
+  .list:hover{
+    color: gray;
+  }
+  
+  .pc-menu {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .pc-menu ul {
+    display: flex;
+  }
+  
+  .pc-menu li {
+    margin-right: 40px;
+  }
+  
+  header .button{
+    background: #eddb22;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 300ms;
+    margin-right: 5%;
+  }
+  
+  header .button:hover {
+    background: #fcef57;
+  }
+  
+  .sp-only {
+    display: none;
+  }
+  
+  .icon-close {
+    display: none;
+  }
+  
+  .menu img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .testButton {
+    font-size: 30px;
+  }
+  
+  #important{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20%;
+    background-color: rgb(0, 0, 0, 0.4);
+  }
+  
+  /* ツイッタータイムライン */
+  #twitter{
+    width: 100%;
+    display: block;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('css-images/shrine.jpg');
+    background-size: cover;
+    opacity: 0.8;
+  }
+  
+  .blur{
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+  
+  #sp-twitter{
+    opacity: 0;
+  }
+
+  #twitterTitle{
+    display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-bottom: 50px;
+  }
+  
+  .twitter-timeline {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+  }
+  
+  /* あらすじ */
+  #storyTitle{
+    display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-bottom: 50px;
+  }
+  
+  #story{
+    background-image: url('css-images/sightseeing.jpg');
+    background-size: cover;
+    margin-top: 20%;
+    opacity: 0.9;
+    padding-bottom: 20%;
+  }
+  
+  #context{
+    width: 80%;
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255, 0.2);
+    padding-bottom: 5%;
+  }
+  
+  #context  h2{
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 35px;
+    color: rgb(204, 227, 248);
+    text-shadow: 3px 3px black;
+  }
+  
+  #context p{
+    margin-top: 100px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 25px;
+    color: rgb(208, 206, 206);
+    text-shadow: 2px 2px black;
+  }
+}
